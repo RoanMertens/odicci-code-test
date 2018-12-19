@@ -9,9 +9,9 @@ class FancyList {
     }
 
     // remove after test fase!
-    this.showList = function() {
-      return _list
-    }
+    // this.showList = function() {
+    //   return _list
+    // }
 
     // variables
     let _list = []
