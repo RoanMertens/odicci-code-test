@@ -34,8 +34,8 @@ class FancyList {
     }
 
     this.insertItemsAt = function(index, ...items){
-      this.checkType(items)
       items = this.flattenItems(items)
+      this.checkType(items)
       _list.splice(index, 0, items)
       _list = this.flattenItems(_list)
     }
@@ -69,8 +69,8 @@ class FancyList {
     this.addItems(item)
   }
   addItems(...items) {
-    this.checkType(items)
     const item = items.flat()
+    this.checkType(item)
     this.addItemsToList(item)
   }
 
@@ -105,7 +105,7 @@ myList1.addItem(44)
 myList1.addItems([12, 14])
 
 // myList1.insertItemAt(1, "11")
-myList1.insertItemsAt(1, [11, 55, "123", 5555])
+myList1.insertItemsAt(1, [11, 55, 33, 5555])
 // myList1.removeItemAt(6)
 // myList1.removeItemsAt(2, 4)
 // myList1.removeItem(5555)
